@@ -186,7 +186,7 @@ int main()
 		total_I=0;
 		total_M=0;
 		total_Q=0;
-		for(int n=0;n<20;n++)   //computing the number of comparisons for 20 iterations and then taking their average
+		for(int n=0;n<30;n++)   //computing the number of comparisons for 20 iterations and then taking their average
 		{    inserts=0;          //initializing number of comparisons to zero for each size
 			 quick=0;
 			 merges=0;
