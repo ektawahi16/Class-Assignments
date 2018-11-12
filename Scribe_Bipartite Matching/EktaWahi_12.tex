@@ -1,0 +1,42 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{graphicx}
+\begin{document}
+\title{Scribe}
+\author{Ekta Wahi}
+\date{November 1,2018}
+\maketitle
+\section{Bipartite Graphs}
+\paragraph{}
+ A bipartite graph (or bigraph) is a graph whose vertices can be divided into two disjoint and independent sets  U and V such that every edge connects a vertex in U to one in V. 
+\paragraph{
+G=(U,V,E) is used to denote a bipartite graph whose partition has the parts U and V, with E denoting the edges of the graph. }
+\begin{center}
+\includegraphics[width=0.5\textwidth]{bipartite.png}
+\paragraph{}\captionof{ Figure 1.1 A Bipartite Graph} 
+\end{center} 
+\section{Bipartite Matching}
+\paragraph{}A matching M is a subset of edges such that each node in V appears in at most one edge in M.
+\paragraph{}
+\textbf{Definition 2.1} (Maximum Matching) A maximum matching is a matching with the largest
+possible number of edges; it is globally optimal.
+\paragraph{}
+\textbf{Definition 2.2} An alternating path with respect to M is a path that alternates between
+edges in M and edges in E − M.
+\paragraph{}
+\textbf{Definition 2.3} An augmenting path with respect to M is an alternating path in which
+the first and last vertices are exposed.}
+\section{Problem}
+\paragraph{}Given a Bipartite graph G=(U,V,E), Find a matching in G which has the maximum cardinality.
+\\
+\\
+\paragpraph{\\{\textbf{BIPARTITE MATCHING(G)}}
+\\M = \phi
+\\{\textbf{repeat}}
+\hspace{35pt}P =(Augmenting-Path(G, M))
+
+\hspace{55pt}M = M \oplus P
+\\{\textbf{until}} \hspace{40pt}P = \phi
+
+
+
+\end{document}
